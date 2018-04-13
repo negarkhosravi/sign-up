@@ -1,0 +1,93 @@
+﻿<!doctype html> 
+
+<html >
+<head>	
+	 <meta charset="UTF-8">
+	<title>Slider </title>
+	<style>
+	
+		*{margin:0px;padding:0px;}
+		#sliderbox img{
+			width:700px;
+			height:333px;
+			float:left;
+		
+		}
+		#outerbox{
+			width:700px;
+			overflow:hidden;
+		
+		}
+		#sliderbox{
+			position:relative;
+			width:2800px;
+			animation-name:move;
+			animation-duration:20s;
+			animation-iteration-count:infinite;
+				}
+		@keyframes move{
+			0%{  
+				left:0px;
+			
+			 }
+						
+			20%{
+				left:0px;
+			
+			}
+			25%
+			{
+				left:-700px;
+			}
+			45%
+			{
+				left:-700px;
+			
+			}
+			50%
+			{
+				left:-1400px;/* yani dar faseleye 50 % ta 70 % left  -1400 bemanad. */
+			}
+			70%
+			{
+				left:-1400px;
+			}
+			75%
+			{
+				left:-2100px;
+			}
+			95%
+			{
+				left:-2100px;
+			}
+			
+			100%
+			{
+				left:2800px;
+			} 
+			
+				
+			
+		}
+		
+		
+		
+	</style>
+</head>
+<body>
+	<div id="outerbox">
+		<div id="sliderbox"> 
+			<img src="image/1.jpg"/>
+			<img src="image/2.jpg"/>
+			<img src="image/3.jpg"/>
+			<img src="image/4.jpg"/>
+							
+		</div>
+	
+	</div>
+
+
+</body>
+
+
+</html>
